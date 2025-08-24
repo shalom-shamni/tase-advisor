@@ -1,0 +1,21 @@
+[project]
+name = "tase-advisor"
+version = "0.1.0"
+description = "Scanner for a user-selected list of Israeli equities (education/POC)."
+authors = [{name="You"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.2",
+    "numpy>=1.26",
+    "requests>=2.32",
+    "PyYAML>=6.0.1",
+    "python-dotenv>=1.0.1",
+]
+
+[project.scripts]
+tase-advisor = "tase_advisor.advisor:main"
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
